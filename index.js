@@ -5,15 +5,12 @@ const express = require('express')
 function getItemsList() {
 
   // вспомогательная функция, заворачивает данные
-  const item = (name, description) => {
-    return { name, description }
+  const item = (name, description, pic) => {
+    return { name, description, pic: pic ?? 'img.png' }
   }
 
   return {
-    item_a: item('первая штука', 'хорошая штука недорого'),
-    item_2: item('первая штука', 'хорошая штука недорого'),
-    item_5: item('первая штука', 'хорошая штука недорого'),
-    item_7: item('первая штука', 'хорошая штука недорого'),
+    item_1: item('Первый бобик', 'просто бобик. 230701', 'https://i.imgur.com/67eT7Jb.jpeg'),
     item_b: item('вторая штука', 'дорогая штука 300$'),
   }
 }

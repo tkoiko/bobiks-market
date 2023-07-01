@@ -1,3 +1,36 @@
+
+#mainpage {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#bobiks {
+    margin: auto;
+}
+
 #bobiks item {
-    display: block;
+    display: grid;
+    border-bottom: solid 2px;
+    margin: 10px;
+    padding: 10px;
+
+    grid-template-areas: 
+        "left right-t"
+        "left right-b";
+    grid-template-columns: 20vw auto;
+    gap: 10px;
+}
+
+#bobiks item img {
+    grid-area: left;
+}
+
+#bobiks item h, #bobiks item pre {
+    grid-area: right-t;
+}
+
+
+#bobiks item img {
+    max-width: 20vw;
 }

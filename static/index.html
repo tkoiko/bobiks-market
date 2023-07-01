@@ -2,11 +2,26 @@
 <html>
 
 <link href="/index.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 <body>
+  <page id="mainpage">
+    <h1>Продаю бобики</h1>
+    <fold id="bobiks" src="/list" processor="genBobiksList"></fold>
 
-  <fold id="bobiks" src="/list" processor="genBobiksList"></fold>
-
+    <hl></hl>
+    <h2>Кошельки</h2>
+    <pre>
+      btc 1CSJkXAxsPzXiFNsqPwSd2paAZBwT2NNZz
+      eth 0x0DC6DaAf0d7B03Eb91c6CB3e01Bb4F8F80D87aB8
+    </pre>
+    <h2>Контакты</h2>
+    <pre>
+      @cosnoi
+    </pre>
+  </page>
 </body>
 
 <script src="index.js" type="module" async defer></script>

@@ -5,6 +5,7 @@ const processors = {
             str += 
             `
                 <item id="${k}">
+                    <img src="${data[k].pic}"></img>
                     <h>${data[k].name}</h>
                     <pre>${data[k].description}</pre>
                 </item>
